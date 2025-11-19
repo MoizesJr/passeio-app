@@ -1,0 +1,41 @@
+<div class="p-6 max-w-lg mx-auto bg-white shadow-lg rounded-lg mt-6">
+  <h2 class="text-2x1 font-semibold text-gray-700 mg-4"> nova Categoria</h2>
+
+  <form id="categoriaForm">
+
+    <!--CAMPO NOME-->
+    <div class="mb-4">
+      <label class="block text-gray-600 font=medium mb-2">Nome</label>
+      <input  type="text" 
+              id="nome" 
+              name="nome"
+              placeholder="Ex: Praias, Montanhas"
+              class="w-full p-3 border border-gray-300 tound shadow-sm focus:ring focus:ring-blue-200 focus:border-blue-400"
+              required
+              />
+      <span class="text-red-500 text-sm">
+        Campo obrigatório
+      </span>
+    </div>
+
+    <!--CAMPO DESCRIÇÃO-->
+    <div class="mb-4">
+      <label class="block text-gray-600 font=medium mb-2">Descrição</label>
+      <textarea  
+              row="4" 
+              id="descricao" 
+              name="descricao"
+              placeholder="Ex: Praias, Montanhas"
+              class="w-full p-3 border border-gray-300 tound shadow-sm focus:outline-none focus:ring focus:ring-blue-200 focus:border-blue-400"
+              required>
+      </textarea>
+      <span class="text-red-500 text-sm">
+        Campo obrigatório
+      </span>
+
+      <button type="submit" class="w-full bg-blue-600 text-white font-semibold p-3 rounded shadow hover:bg-blue-700">
+        Cadastrar 
+      </button>
+    </div>
+  </form>
+</div>    

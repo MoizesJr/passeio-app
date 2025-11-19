@@ -5,7 +5,13 @@ import { Layout } from './layout/layout';
 const routes: Routes = [
   {
     path: '',
-    component: Layout
+    component: Layout,
+    children: [
+      {
+        path: 'categorias',
+        loadChildren: () => import('../categorias/categorias-module').then(m => m.CategoriasModule)
+      }
+    ]
   }
 ];
 
