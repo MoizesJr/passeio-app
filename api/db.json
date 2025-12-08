@@ -1,9 +1,37 @@
 {
   "categorias": [
     {
-      "id": "1",
-      "nome": "Restaurantes",
-      "descricao": "Lugares para comer e beber"
+      "id": "2",
+      "nome": "Shoppings e lojas",
+      "descricao": "Locais para fazer compras e passear"
+    },
+    {
+      "id": "8cfc",
+      "nome": "Praia dos coqueiros",
+      "descricao": "Lugares top para tomar banho"
+    },
+    {
+      "id": "3",
+      "nome": "pra bela 2",
+      "descricao": "condominio para aluguel"
+    },
+    {
+      "id": "6825",
+      "nome": "Bar do galo",
+      "categoria": "8cfc",
+      "localizacao": "Recife",
+      "urlFoto": "",
+      "avaliacao": "5"
+    }
+  ],
+  "lugares": [
+    {
+      "id": "6573",
+      "nome": "Bar de coqueirinhos",
+      "categoria": "8cfc",
+      "localizacao": "Paraiba",
+      "urlFoto": "",
+      "avaliacao": "5"
     }
   ]
 }
