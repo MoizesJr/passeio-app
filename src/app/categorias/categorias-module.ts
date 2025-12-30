@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { CategoriasRoutingModule } from './categorias-routing-module';
-import { Categoria } from './categoria/categoria';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 
 @NgModule({
   declarations: [
-    Categoria
   ],
   imports: [
     CommonModule,
     CategoriasRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CategoriaComponent,
   ]
 })
 export class CategoriasModule { }

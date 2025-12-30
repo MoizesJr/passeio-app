@@ -10,8 +10,7 @@ export class CategoriaService {
   
   constructor(private http: HttpClient) { }
 
-  private readonly API = 'http://localhost:3000/categorias';
-
+  private readonly API = 'http://localhost:8080/categorias';
   salvar(categoria: Categoria) : Observable<Categoria>{
     return this.http.post<Categoria>(this.API, categoria);
     }

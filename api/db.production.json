@@ -1,0 +1,58 @@
+{
+  "categorias": [
+    {
+      "nome": "Praias",
+      "descricao": "Melhores praias para banho",
+      "id": 1
+    },
+    {
+      "nome": "Parques",
+      "descricao": "Lugar para familia\n",
+      "id": 2
+    },
+    {
+      "nome": "Shoppings",
+      "descricao": "Locais para fazer compras e opções de alimento",
+      "id": 3
+    },
+    {
+      "nome": "Teatro",
+      "descricao": "Locais para show's e apresentações",
+      "id": 4
+    }
+  ],
+  "lugares": [
+    {
+      "nome": "Praia de coqueirinho",
+      "categoria": "Praias",
+      "localizacao": "Paraiba - PB",
+      "urlFoto": "https://revistaoeste.com/oestegeral/wp-content/uploads/2025/08/Praia-do-coqueirinho-Joao-Pessoa-Paraiba_-1-1-1140x570.jpg",
+      "avaliacao": "5",
+      "id": 5
+    },
+    {
+      "nome": "Bar do galo",
+      "categoria": "Praias",
+      "localizacao": "Ipojuca - PE",
+      "urlFoto": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/02/7e/bf/bar-do-galo-recanto-do.jpg?w=1800&h=1000&s=1",
+      "avaliacao": "5",
+      "id": 6
+    },
+    {
+      "nome": "Parque da jaqueira",
+      "categoria": "Parques",
+      "localizacao": "Recife - PE",
+      "urlFoto": "https://www.parquedajaqueira.com.br/wp-content/uploads/2020/06/Parque-da-Jaqueira-Recife-1.jpg",
+      "avaliacao": "4",
+      "id": 7
+    },
+    {
+      "nome": "Praia dos Carneiros",
+      "categoria": "Praias",
+      "localizacao": "Tamandaré - PE",
+      "urlFoto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHrgcoZhndldDOxHgbVM_5LVQbZqW0brS8q-HaovtjH-9vNYhJwCeB2rto2X4AfyviVq7CO3uL",
+      "avaliacao": "5",
+      "id": 8
+    }
+  ]
+}

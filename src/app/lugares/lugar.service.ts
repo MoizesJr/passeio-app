@@ -8,7 +8,7 @@ import { Lugar } from './lugar';
 })
 export class LugarService {
 
-  private readonly API = 'http://localhost:3000/lugares';
+  private readonly API = 'http://localhost:8080/lugares';
   
   constructor(private http:HttpClient) { }
 

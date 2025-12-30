@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Galeria } from './galeria/galeria';
+import { GaleriaComponent } from './galeria/galeria.component';
+
 
 const routes: Routes = [
   {
     path: '',
-    component: Galeria,
+    component: GaleriaComponent,
     pathMatch: 'full'
   }
-
 ];
 
 @NgModule({
