@@ -23,7 +23,7 @@ export class LugarService {
   filtrar(nome: string, categoria: string) : Observable<Lugar[]> {
     let params = new HttpParams()
     if(nome){
-     params =   params.set('nome_like', nome);
+     params =   params.set('nome', nome);
     }
     if(categoria && categoria !== '-1'){
       params = params.set('categoria', categoria);
