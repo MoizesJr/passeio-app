@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
 import { FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-
-// --- IMPORTS CORRIGIDOS ---
-// Apontando para os arquivos de Interface (não de componente)
 import { Categoria } from '../../categorias/categoria';
 import { CategoriaService } from '../../categorias/categoria.service';
 import { LugarService } from '../lugar.service';

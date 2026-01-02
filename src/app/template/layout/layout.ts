@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { LayoutProps } from './layoutprops';
-import { ActivatedRoute, Router, NavigationEnd } from '@angular/router'; // Adicionado NavigationEnd
+import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { filter, map } from 'rxjs';
 import { AuthgoogleService } from '../../authgoogle.service';
-import { AuthService } from '../../AuthService.service'; // <--- IMPORTANTE: Importe seu serviço de banco
+import { AuthService } from '../../AuthService.service';
 
 @Component({
   selector: 'app-layout',
@@ -21,12 +21,12 @@ export class Layout implements OnInit {
   constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
-    private loginService: AuthgoogleService, // Serviço do Google
-    public authService: AuthService         // <--- INJETADO COMO PUBLIC: Resolve o erro de undefined
+    private loginService: AuthgoogleService,
+    public authService: AuthService 
   ) { }
 
   ngOnInit(): void {
-    // Carrega as propriedades da rota logo de início
+    
     this.props = this.obterPropriedadesDaRota();
 
     // Escuta mudanças de rota para atualizar o título/subtítulo
