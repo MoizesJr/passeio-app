@@ -12,6 +12,7 @@ import { AuthgoogleService } from '../authgoogle.service';
 export class Landingpage {
 
 profile: Profile | undefined;
+  authService: any;
 
   constructor(
     private router: Router, 
@@ -23,8 +24,21 @@ profile: Profile | undefined;
     }
 
     logarComGoogle() { 
-      this.loginService.login();
+  this.loginService.login(); // 1. Faz o login no Google
+  
+  // 2. Escuta quando o login do Google termina e envia para Backend
+  this.loginService.authState.subscribe((dadosGoogle: any) => {
+    if (dadosGoogle) {
+      this.authService.loginNoBackEnd(dadosGoogle).subscribe({
+        next: (usuarioCompleto: any) => {
+          console.log("Usuário autenticado no Postgres:", usuarioCompleto);
+          this.router.navigate(['/paginas/galeria']);
+        },
+        error: (err: any) => console.error("Erro ao salvar no banco", err)
+      });
     }
+  });
+}
 
     isLoggedIn() : boolean {
       const dadosGoogle = this.loginService.getLoggedProfile();

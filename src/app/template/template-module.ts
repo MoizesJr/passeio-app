@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 
 import { TemplateRoutingModule } from './template-routing-module';
 import { Layout } from './layout/layout';
-import { CategoriasModule } from '../categorias/categorias-module';
+import { AcessoNegadoComponent } from './acesso-negado/acesso-negado.component';
 
 
 @NgModule({
   declarations: [
-    Layout
+    Layout,
+    AcessoNegadoComponent
   ],
   imports: [
     CommonModule,
     TemplateRoutingModule,
-    CategoriasModule
   ]
 })
 export class TemplateModule { }
