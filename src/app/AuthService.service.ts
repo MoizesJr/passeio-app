@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
+import { environment } from '../environments/environment';
 
 export interface Usuario {
   id?: number;
@@ -11,7 +12,9 @@ export interface Usuario {
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private readonly API = 'http://localhost:8080/auth/login';
+
+  private readonly API = `${environment.apiUrl}/auth/login`;
+
   private usuarioSubject = new BehaviorSubject<Usuario | null>(null);
 
   constructor(private http: HttpClient) {
