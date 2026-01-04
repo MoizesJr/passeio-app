@@ -21,5 +21,14 @@ export class CategoriaService {
   obterTodos() : Observable<Categoria[]> {
     return this.http.get<Categoria[]>(this.API);
   }
+
+  atualizar(categoria: Categoria) : Observable<Categoria> {
+    return this.http.put<Categoria>(`${this.API}/${categoria.id}`, categoria);
+  }
+
+
+  excluir(id: number): Observable<void> {
+  return this.http.delete<void>(`${this.API}/${id}`);
+}
 }
 

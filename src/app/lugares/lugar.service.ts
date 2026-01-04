@@ -32,4 +32,17 @@ export class LugarService {
 
     return this.http.get<Lugar[]>(this.API, { params } );
   }
+
+  excluir(id: number) : Observable<void> {
+    return this.http.delete<void>(`${this.API}/${id}`);
+  }
+
+  buscarPorId(id: number) : Observable<Lugar> {
+    return this.http.get<Lugar>(`${this.API}/${id}`);
+  }
+
+  atualizar(lugar: Lugar) : Observable<Lugar> {
+    return this.http.put<Lugar>(`${this.API}/${lugar.id}`, lugar);
+  }
+
 }

@@ -1,6 +1,6 @@
 import { Injectable, inject, signal } from '@angular/core';
 import { AuthConfig, OAuthService } from 'angular-oauth2-oidc';
-import  { auth } from './auth.config';
+import  { auth } from './guards/auth.config';
 import { Router } from '@angular/router';
 import { AuthService } from './AuthService.service';
 
