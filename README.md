@@ -1,59 +1,60 @@
-# PasseioApp
+# 🌴 Passeio App — Guia de Turismo Profissional
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.0.
+<div align="center">
+  <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+</div>
 
-## Development server
+<br />
 
-To start a local development server, run:
+> **Status do Projeto:** 🚀 Em produção / Concluído
 
-```bash
-ng serve
-```
+Este é um sistema robusto e completo desenvolvido para agências de turismo. O objetivo principal foi unir uma experiência visual encantadora para o turista com uma interface administrativa prática e eficiente para o gestor.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Funcionalidades Principais
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **🖼️ Galeria de Passeios:** Exibição dinâmica com fotos de alta qualidade, geolocalização e sistema de avaliações.
+* **🔍 Filtro Inteligente:** Sistema de busca em tempo real por nome ou categorias (Ex: Praias, Museus, Histórico).
+* **💡 Dicas de Viagem:** Seção de FAQ interativa com componentes *accordion* para informações como tábua de marés e checklists.
+* **⭐ Mural de Clientes:** Prova social integrada com depoimentos reais e ranqueamento por estrelas.
+* **💬 Conversão Direta:** Botão de WhatsApp flutuante com animação *Pulse* para facilitar o contato imediato.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Stack Técnica e Performance
 
-```bash
-ng generate --help
-```
+O projeto foi construído sob os pilares de **código limpo** e **velocidade extrema**:
 
-## Building
+-   **Angular (Standalone Components):** Arquitetura moderna que elimina módulos desnecessários, tornando a aplicação leve e modular.
+-   **Tailwind CSS:** Design responsivo *mobile-first* com uso de gradientes e micro-interações suaves.
+-   **⚡ Otimização de Performance:** -   **Lazy Loading:** Carregamento de rotas e componentes apenas quando necessário.
+    -   **Skeletons:** Carregamento visual (shimmer effect) para melhorar a percepção de velocidade (UX).
+    -   **Image Optimization:** Implementação de carregamento tardio para economia de dados do usuário.
+-   **🔐 Painel Administrativo:** Dashboard restrito com autenticação, permitindo o gerenciamento completo (CRUD) de passeios sem tocar no código.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## 📸 Demonstração Visual
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+<div align="center">
 
-## Running unit tests
+| Tela | Diferencial |
+| :--- | :--- |
+| **Página Inicial** | Layout minimalista focado em conversão e usabilidade. |
+| **Interatividade** | Botão flutuante com efeito animado constante. |
+| **Área Admin** | Painel intuitivo para edição de dados em tempo real. |
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+</div>
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## ⚙️ Instalação e Uso
 
-For end-to-end (e2e) testing, run:
+Se desejar testar o projeto localmente:
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+1. **Clone o repositório:**
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
