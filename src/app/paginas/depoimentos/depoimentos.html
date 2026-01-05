@@ -1,0 +1,57 @@
+<div class="container mx-auto p-6 max-w-6xl animate-fade-in">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-black text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
+      Quem já viajou conosco 📸
+    </h2>
+    <p class="text-yellow-400 font-bold mt-3 uppercase tracking-[0.2em] drop-shadow-md">
+      Histórias reais de aventuras inesquecíveis
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+    
+    <div *ngFor="let item of muralDeClientes" 
+         class="relative bg-white/10 backdrop-blur-xl p-8 rounded-[2.5rem] border border-white/20 shadow-2xl transition-all duration-500 hover:-translate-y-2 group">
+      
+      <div class="absolute -top-8 left-1/2 -translate-x-1/2">
+        <div class="w-16 h-16 rounded-full border-4 border-yellow-400 shadow-2xl bg-gray-800 flex items-center justify-center overflow-hidden transition-transform group-hover:scale-110">
+          <span class="text-3xl">👤</span>
+          </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <div class="text-yellow-400 text-2xl mb-4 drop-shadow-sm">
+          {{ getEstrelas(item.nota) }}
+        </div>
+        
+        <div class="relative">
+          <span class="absolute -top-4 -left-2 text-6xl text-white/10 font-serif">“</span>
+          <p class="text-white/90 italic mb-6 leading-relaxed text-lg font-medium relative z-10">
+            {{ item.texto }}
+          </p>
+          <span class="absolute -bottom-10 -right-2 text-6xl text-white/10 font-serif">”</span>
+        </div>
+
+        <h4 class="font-black text-white uppercase text-sm tracking-[0.3em] border-t border-white/10 pt-4">
+          {{ item.nome }}
+        </h4>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="mt-24 text-center bg-black/40 backdrop-blur-2xl p-12 rounded-[3rem] border border-white/10 shadow-3xl animate-pulse-subtle">
+    <h3 class="text-2xl md:text-3xl font-black text-white mb-3 tracking-tight">
+      Sua próxima aventura começa aqui!
+    </h3>
+    <p class="text-white/70 mb-8 text-lg font-light">
+      Junte-se aos nossos clientes satisfeitos e reserve seu lugar no paraíso.
+    </p>
+    
+    <a href="https://api.whatsapp.com/send?phone=5581988887777&text=Olá! Vi os depoimentos no site e quero agendar um passeio." 
+       class="inline-flex items-center gap-3 bg-white text-gray-900 font-black py-5 px-12 rounded-2xl shadow-2xl hover:bg-yellow-400 hover:scale-105 transition-all transform active:scale-95 group">
+      <span class="text-2xl group-hover:rotate-12 transition-transform">💬</span>
+      <span>RESERVAR PELO WHATSAPP</span>
+    </a>
+  </div>
+</div>

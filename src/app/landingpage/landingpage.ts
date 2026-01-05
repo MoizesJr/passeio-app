@@ -46,4 +46,9 @@ profile: Profile | undefined;
       this.profile = dadosGoogle;
       return !!this.profile;
     }
+
+    imgError(event: any) {
+  // Se o link falhar, ele tenta esse reserva automaticamente
+  event.target.src = 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg';
+}
 }

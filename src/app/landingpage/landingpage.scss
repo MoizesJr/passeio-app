@@ -1,0 +1,31 @@
+
+  /* Animação para o fundo aparecer suavemente */
+  .animate-fade-in {
+    animation: fadeIn 1.2s ease-out forwards;
+  }
+
+  /* Animação para o card subir levemente ao aparecer */
+  .animate-slide-up {
+    animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { 
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to { 
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Melhora o contraste do texto sobre a foto */
+  .drop-shadow-2xl {
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+  }

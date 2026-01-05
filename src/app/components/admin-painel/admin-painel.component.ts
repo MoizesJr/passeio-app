@@ -40,13 +40,13 @@ export class AdminPainelComponent implements OnInit {
   constructor() {
     // Inicialização do formulário de Lugares
     this.formEdicao = new FormGroup({
-      id: new FormControl(null),
-      nome: new FormControl('', Validators.required),
-      localizacao: new FormControl('', Validators.required),
-      urlFoto: new FormControl('', Validators.required),
-      avaliacao: new FormControl(0, [Validators.min(0), Validators.max(5)]),
-      categoria: new FormControl(null, Validators.required)
-    });
+  id: new FormControl(null),
+  nome: new FormControl('', Validators.required),
+  localizacao: new FormControl('', Validators.required),
+  urlFoto: new FormControl('', Validators.required),
+  avaliacao: new FormControl(0, [Validators.min(0), Validators.max(5)]),
+  categoria: new FormControl(null, Validators.required),
+});
 
     // Inicialização do formulário de Categorias (Novo Padrão)
     this.formCategoria = new FormGroup({
